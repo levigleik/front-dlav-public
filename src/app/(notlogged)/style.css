@@ -1,0 +1,21 @@
+.loginAnim {
+  @apply relative z-0 flex items-center justify-center overflow-hidden rounded-[12px]
+    border-none p-7 text-center text-white transition-all
+    duration-500
+    ease-in-out
+    before:absolute
+    before:-left-2/4 before:-top-2/4 before:z-[-2]
+    before:h-[200%] before:w-[200%] before:animate-[rotate_1s_linear_infinite] before:bg-main-200
+    before:bg-[linear-gradient(#0396a6,#0396a6),linear-gradient(#76c2de,#76c2de)] before:bg-[length:50%_50%,50%_50%] before:bg-no-repeat
+    before:content-[''] after:absolute after:left-1.5
+    after:top-1.5
+    after:z-[-1] after:h-[calc(100%_-_12px)] after:w-[calc(100%_-_12px)]
+    after:rounded-[6px] after:bg-main-200 after:shadow-[0_0_0_2px_#0396a6] after:content-[''] hover:shadow-[0_0_5px_#87c9e2,0_0_25px_#0396a6,0_0_60px_#76c2de];
+}
+.loginAnim::before {
+  background-position:
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%;
+}

@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen bg-gray-200 dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900;
+}
+
+* {
+  scrollbar-width: auto;
+  -webkit-scrollbar-width: auto;
+  scrollbar-color: #0388a6 #ffffff;
+  -webkit-scrollbar-color: #0388a6 #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0388a6;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  @apply transition-[background-color] delay-[0s] duration-[5000s] ease-[ease-in-out];
+}
+
+[vaul-drawer][vaul-drawer-visible="true"]:after {
+  height: 0
+}
+/* .nav-link {
+  @apply relative inline-block bg-[linear-gradient(_to_right,#54b3d6,#54b3d6_50%,#fff_50%_)] bg-[length:200%_100%] bg-[-100%] px-0 py-[5px] transition-all duration-[0.3s] ease-[ease-in-out] before:absolute before:bottom-[-3px] before:left-0 before:block before:h-[3px] before:w-0 before:transition-all before:duration-[0.3s] before:ease-[ease-in-out] before:content-[''] hover:bg-[0] hover:before:w-full light:text-black dark:text-white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:before {
+    background: #54b3d6;
+  }
+} */
